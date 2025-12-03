@@ -258,9 +258,20 @@
   .login {
     background: linear-gradient(135deg, #1a237e 0%, #0d1421 100%);
   }
+  .login__text {
+    display: none !important;
+  }
+  
   .login__logo img {
     content: url('https://topazio.blob.core.windows.net/storage/header/logo-banco-topazio.svg');
     width: 200px;
+  }
+  
+  .login .argo__logo {
+    background-image: url(https://topazio.blob.core.windows.net/storage/header/logo-banco-topazio.svg);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .login__title {
