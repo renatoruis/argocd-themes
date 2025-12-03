@@ -38,7 +38,7 @@
   
   /* Sidebar */
   .sidebar {
-    background-color: var(--topazio-background-secondary);
+    background-color: var(--topazio-secondary);
     border-right: 1px solid var(--topazio-border);
   }
   
@@ -360,3 +360,4 @@
       font-weight: bold;
     }
   }
+  
