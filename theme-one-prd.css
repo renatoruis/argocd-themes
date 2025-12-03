@@ -1,0 +1,388 @@
+:root {
+    --topazio-primary: #50c3c7;
+    --topazio-secondary: #414549;
+    --topazio-success: #2ecc71;
+    --topazio-warning: #f39c12;
+    --topazio-error: #e74c3c;
+    --topazio-background: #f5f7fa;
+    --topazio-background-secondary: #ffffff;
+    --topazio-text: #2c3e50;
+    --topazio-text-light: #7f8c8d;
+    --topazio-border: #e1e8ed;
+  }
+  
+  body {
+    background-color: var(--topazio-background) !important;
+    color: var(--topazio-text) !important;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    background-color: var(--topazio-secondary) !important;
+    border-bottom: 3px solid var(--topazio-primary) !important;
+  }
+  
+  .top-bar__title {
+    color: #ffffff !important;
+  }
+  
+  .top-bar__breadcrumbs a {
+    color: #ffffff !important;
+  }
+  
+  /* Page */
+  .page {
+    background-color: var(--topazio-background);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: var(--topazio-secondary);
+    border-right: 1px solid var(--topazio-border);
+  }
+  
+  .sidebar__nav-item a {
+    color: var(--topazio-text);
+  }
+  
+  .sidebar__nav-item:hover {
+    background-color: rgba(80, 195, 199, 0.1);
+  }
+  
+  .sidebar__nav-item.active {
+    background-color: var(--topazio-primary);
+    color: #ffffff;
+  }
+  
+  .sidebar__nav-item.active a {
+    color: #ffffff !important;
+  }
+  
+  /* Application Status Panel */
+  .application-status-panel {
+    background-color: var(--topazio-background-secondary) !important;
+    color: var(--topazio-text);
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid var(--topazio-border) !important;
+  }
+  
+  .application-details__status-panel {
+    background-color: var(--topazio-background-secondary);
+    color: var(--topazio-text);
+    margin: 12px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Graph Options Panel */
+  .application-details .graph-options-panel {
+    background: var(--topazio-background-secondary) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid var(--topazio-border) !important;
+  }
+  
+  /* Resource Tree Nodes */
+  .application-resource-tree__node {
+    background: var(--topazio-background-secondary) !important;
+    border: 1px solid var(--topazio-border) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .application-resource-tree__node:hover {
+    border-color: var(--topazio-primary) !important;
+    box-shadow: 0 4px 12px rgba(80, 195, 199, 0.2) !important;
+  }
+  
+  .application-resource-tree__node-label {
+    background: var(--topazio-secondary) !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    border: none;
+    border-radius: 4px !important;
+    margin-right: 4px !important;
+    padding: 2px 6px !important;
+  }
+  
+  .application-resource-tree__node--pod {
+    background-color: rgba(80, 195, 199, 0.15) !important;
+    border-color: var(--topazio-primary) !important;
+  }
+  
+  body .application-resource-tree__node--pod,
+  .application-resource-tree__node--pod.application-resource-tree__node--pod {
+    background-color: rgba(80, 195, 199, 0.15) !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--topazio-primary) !important;
+  }
+  
+  /* Applications List */
+  .applications-list__view-type i.selected {
+    color: var(--topazio-primary) !important;
+  }
+  
+  /* Login/Logout Button */
+  .login-logout-button {
+    color: var(--topazio-primary) !important;
+  }
+  
+  /* Buttons */
+  .argo-button--base {
+    background-color: var(--topazio-primary) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+    border: none !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .argo-button--base:hover {
+    background-color: #3ba8ab !important;
+    box-shadow: 0 4px 12px rgba(80, 195, 199, 0.3) !important;
+  }
+  
+  .argo-button--base-o {
+    color: var(--topazio-error) !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--topazio-error) !important;
+    margin-right: 8px !important;
+    background: transparent !important;
+  }
+  
+  .argo-button--base-o:not(.disabled):not([disabled]):hover {
+    color: #ffffff !important;
+    background-color: var(--topazio-error) !important;
+    border: 1px solid var(--topazio-error) !important;
+  }
+  
+  /* Tabs */
+  .tabs__nav {
+    border-bottom: 2px solid var(--topazio-border);
+  }
+  
+  .tabs__nav-wrapper .tab.active {
+    border-bottom: 3px solid var(--topazio-primary) !important;
+  }
+  
+  .tabs__nav-wrapper a {
+    color: var(--topazio-text) !important;
+    font-weight: 600 !important;
+  }
+  
+  .tabs__nav-wrapper a:hover {
+    color: var(--topazio-primary) !important;
+  }
+  
+  /* Dropdown */
+  .argo-dropdown__anchor a {
+    color: var(--topazio-primary) !important;
+  }
+  
+  body .argo-dropdown {
+    color: var(--topazio-primary) !important;
+  }
+  
+  /* Sliding Panel */
+  .sliding-panel__wrapper {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .sliding-panel__body {
+    background: var(--topazio-background-secondary) !important;
+    border-radius: 12px 0 0 12px !important;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* White Box */
+  .white-box {
+    background: var(--topazio-background-secondary) !important;
+    border: 1px solid var(--topazio-border) !important;
+    border-radius: 8px !important;
+  }
+  
+  .white-box a {
+    color: var(--topazio-primary) !important;
+  }
+  
+  /* Table */
+  .argo-table-list {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .argo-table-list__head {
+    background-color: var(--topazio-secondary) !important;
+    color: #ffffff !important;
+  }
+  
+  .argo-table-list__head-row {
+    font-weight: 600;
+  }
+  
+  .argo-table-list__row {
+    background: var(--topazio-background-secondary) !important;
+    border-bottom: 1px solid var(--topazio-border) !important;
+  }
+  
+  .argo-table-list__row:nth-child(even) {
+    background: var(--topazio-background) !important;
+  }
+  
+  .argo-table-list--clickable .argo-table-list__row:hover {
+    background: rgba(80, 195, 199, 0.08) !important;
+    box-shadow: 0 2px 8px rgba(80, 195, 199, 0.15) !important;
+  }
+  
+  .argo-table-list__head-cell,
+  .argo-table-list__cell {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Resource Tree Edge */
+  .application-resource-tree__edge .application-resource-tree__line:last-child:after {
+    top: -8px !important;
+  }
+  
+  /* Login Page */
+  .login {
+    background: linear-gradient(135deg, #1a237e 0%, #0d1421 100%);
+  }
+  .login__text {
+    display: none !important;
+  }
+  
+  .login__logo img {
+    content: url('https://topazio.blob.core.windows.net/storage/header/logo-banco-topazio.svg');
+    width: 200px;
+  }
+  
+  .login .argo__logo {
+    background-image: url(https://topazio.blob.core.windows.net/storage/header/logo-banco-topazio.svg);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .login__title {
+    color: #ffffff;
+  }
+  
+  .login__box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  /* Banner */
+  .ui-banner {
+    background: #ffe01d;
+  }
+  
+  .ui-banner a {
+    text-decoration: none;
+    color: #ff0043;
+  }
+
+  /* Cards */
+  .applications-tiles .argo-table-list__row {
+    border-radius: 12px !important;
+    margin: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Info Items */
+  .info-item {
+    color: var(--topazio-text) !important;
+  }
+  
+  .info-item__label {
+    color: var(--topazio-text-light) !important;
+  }
+  
+  /* Inputs */
+  input, select, textarea {
+    border: 1px solid var(--topazio-border) !important;
+    border-radius: 6px !important;
+    background: var(--topazio-background-secondary) !important;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--topazio-primary) !important;
+    box-shadow: 0 0 0 3px rgba(80, 195, 199, 0.2) !important;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--topazio-background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--topazio-primary);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3ba8ab;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .argo-table-list,
+    .argo-table-list__head,
+    .argo-table-list__head-row,
+    .argo-table-list__row,
+    .argo-table-list__head-cell,
+    .argo-table-list__cell {
+      display: block;
+    }
+  
+    .argo-table-list__head {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    .argo-table-list__row {
+      margin-bottom: 10px;
+      border-radius: 8px !important;
+    }
+  
+    .argo-table-list__cell {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .argo-table-list__cell:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-title);
+      font-weight: bold;
+    }
+  }
+  
