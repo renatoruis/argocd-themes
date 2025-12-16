@@ -32,3 +32,17 @@
 .title {
     border-bottom: 2px solid #06436a !important;
 }
+
+.khq-login h3.logo svg {
+display: none;
+}
+
+.khq-login h3.logo {
+width: 100px !important;
+height: 70px !important;
+background-image: url("https://i0.wp.com/a5x.com.br/wp-content/uploads/2025/06/Logo-1.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+display: inline-block !important;
+}
